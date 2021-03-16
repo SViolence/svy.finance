@@ -10,6 +10,7 @@ import CardValue from './CardValue'
 const StyledCakeStats = styled(Card)`
   margin-left: auto;
   margin-right: auto;
+  border: 2px solid #f7f791;
 `
 
 const Row = styled.div`

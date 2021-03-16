@@ -56,8 +56,8 @@ const Home: React.FC = () => {
   return (
     <Page>
       <Hero>
-        <Heading as="h1" size="xl" color="secondary">
-          {TranslateString(576, 'SViolence Token')}
+        <Heading as="h1" size="xl" color="primary">
+          {TranslateString(576, 'SViolence Finance')}
         </Heading>
         <Text>{TranslateString(578, 'The new era of Yield Tokens.')}</Text>
 <Text>{TranslateString(578, 'The first decentralized token against the violence on the Binance Smart Chain.')}</Text>
