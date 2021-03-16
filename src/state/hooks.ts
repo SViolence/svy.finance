@@ -51,6 +51,7 @@ export const useFarms = (): Farm[] => {
 }
 
 export const useFarmFromPid = (pid): Farm => {
+  
   const farm = useSelector((state: State) => state.farms.data.find((f) => f.pid === pid))
   return farm
 }
@@ -104,6 +105,11 @@ export const usePriceCakeBusd = (): BigNumber => {
   const bnbPriceUSD = usePriceBnbBusd()
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
+}
+export const usePriceSVYBusd = (): BigNumber => {
+  const pid = 1 // CAKE-BNB LP
+  const priceSVY = useGetApiPrice("svy")
+  return new BigNumber(priceSVY)
 }
 
 export const usePriceEthBusd = (): BigNumber => {
@@ -220,7 +226,6 @@ export const useGetApiPrice = (token: string) => {
   if (!prices) {
     return null
   }
-
   return prices[token.toLowerCase()]
 }
 

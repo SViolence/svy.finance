@@ -5,7 +5,7 @@ import { allLanguages } from 'config/localisation/languageCodes'
 import { LanguageContext } from 'contexts/Localisation/languageContext'
 import useTheme from 'hooks/useTheme'
 import useAuth from 'hooks/useAuth'
-import { usePriceCakeBusd, useProfile } from 'state/hooks'
+import { usePriceCakeBusd, usePriceSVYBusd, useProfile } from 'state/hooks'
 import config from './config'
 
 const Menu = (props) => {
@@ -14,6 +14,7 @@ const Menu = (props) => {
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
   const cakePriceUsd = usePriceCakeBusd()
+  const svyPriceUsd = usePriceSVYBusd()
   const { profile } = useProfile()
 
   return (
@@ -27,6 +28,7 @@ const Menu = (props) => {
       langs={allLanguages}
       setLang={setSelectedLanguage}
       cakePriceUsd={cakePriceUsd.toNumber()}
+      svyPriceUsd={svyPriceUsd.toNumber()}
       links={config}
       profile={{
         username: profile?.username,

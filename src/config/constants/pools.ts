@@ -19,6 +19,24 @@ const pools: PoolConfig[] = [
     isFinished: false,
     tokenDecimals: 18,
   },
+  {
+    sousId: 1,
+    tokenName: 'SVY',
+    tokenAddress: '0x93af74c2dbd8c6bb2d2914c243e0271781a5f465',
+    stakingTokenName: QuoteToken.CAKE,
+    stakingTokenAddress: '0x93af74c2dbd8c6bb2d2914c243e0271781a5f465',
+    contractAddress: {
+      97: '0xEA0884521490Ad7aE457300eab59F85D4C53BF5C',
+      56: '0x3EF9E4821B35Aba65cdA7247C55696bCBF5e6DA7',
+    },
+    poolCategory: PoolCategory.CORE,
+    projectLink: 'https://pancakeswap.finance/',
+    harvest: false,
+    tokenPerBlock: '1',
+    sortOrder: 1,
+    isFinished: false,
+    tokenDecimals: 18,
+  },
 ]
 
 export default pools
