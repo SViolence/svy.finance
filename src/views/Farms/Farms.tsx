@@ -26,7 +26,7 @@ const StyledImage = styled(Image)`
 
 const Header = styled.div`
   padding: 32px 0px;
-  background: ${({ theme }) => theme.colors.gradients.bubblegum};
+  background: #f3482b;
 
   padding-left: 16px;
   padding-right: 16px;
@@ -187,10 +187,10 @@ const Farms: React.FC = () => {
   return (
     <>
       <Header>
-        <Heading as="h1" size="xxl" color="secondary" mb="24px">
+        <Heading as="h1" size="xxl" color="primary" mb="24px">
           {TranslateString(999, 'Farms')}
         </Heading>
-        <Heading size="lg" color="text">
+        <Heading size="lg" color="primary">
           {TranslateString(999, 'Stake Liquidity Pool (LP) tokens to earn.')}
         </Heading>
       </Header>

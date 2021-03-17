@@ -35,7 +35,7 @@ const Farm: React.FC = () => {
     <Page>
       <Hero>
         <div>
-          <Heading as="h1" size="xxl" mb="16px">
+          <Heading as="h1" size="xxl" mb="16px" color="primary">
             {TranslateString(738, 'SVY Pool')}
           </Heading>
           <ul>

@@ -14,7 +14,7 @@ const StyledFarmStakingCard = styled(Card)`
   background-repeat: no-repeat;
   background-position: top right;
   min-height: 376px;
-  border: 2px solid #f7f791;
+  border: 2px solid #904985;
 `
 
 const Block = styled.div`
@@ -26,7 +26,7 @@ const CardImage = styled.img`
 `
 
 const Label = styled.div`
-  color: ${({ theme }) => theme.colors.textSubtle};
+  color: ${({ theme }) => theme.colors.text};
   font-size: 14px;
 `
 
