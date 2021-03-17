@@ -47,17 +47,17 @@ const App: React.FC = () => {
             <Route path="/" exact>
               <Home />
             </Route>
-            <Route path="/farms">
+            <Route exact path="/farms">
               <Farms />
             </Route>
-            <Route path="/pools">
+            <Route exact path="/pools">
               <Pools />
             </Route>
             {/* Redirect */}
-            <Route path="/staking">
+            <Route exact path="/staking">
               <Redirect to="/pools" />
             </Route>
-            <Route path="/syrup">
+            <Route exact path="/syrup">
               <Redirect to="/pools" />
             </Route>
             {/* 404 */}
