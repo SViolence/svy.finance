@@ -106,6 +106,11 @@ export const usePriceCakeBusd = (): BigNumber => {
   const farm = useFarmFromPid(pid)
   return farm.tokenPriceVsQuote ? bnbPriceUSD.times(farm.tokenPriceVsQuote) : ZERO
 }
+export const usePriceSPCBusd = (): BigNumber => {
+  const pid = 1 // CAKE-BNB LP
+  const priceSPC = useGetApiPrice("spc")
+  return new BigNumber(priceSPC)
+}
 export const usePriceSVYBusd = (): BigNumber => {
   const pid = 1 // CAKE-BNB LP
   const priceSVY = useGetApiPrice("svy")
