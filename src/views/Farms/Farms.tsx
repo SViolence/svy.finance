@@ -167,7 +167,7 @@ const Farms: React.FC = () => {
       <div>
         <FlexLayout>
           <Route exact path={`${path}`}>
-            {farmsStaked.map((farm) => (farm.pid !== 3 && farm.pid !== 4 ?
+            {farmsStaked.map((farm) => (farm.pid !== 4 ?
               <FarmCard
                 key={farm.pid}
                 farm={farm}
@@ -195,7 +195,7 @@ const Farms: React.FC = () => {
         </Heading>
       </Header>
       <Page>
-        
+
         {renderContent()}
         <StyledImage src="/images/3dpan.png" alt="Pancake illustration" width={120} height={103} />
       </Page>

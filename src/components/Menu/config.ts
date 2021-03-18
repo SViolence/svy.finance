@@ -94,28 +94,28 @@ const config: MenuEntry[] = [
   //   icon: 'IfoIcon',
   //   href: '/ifo',
   // },
-  {
-    label: 'Social Media',
-    icon: 'MoreIcon',
-    items: [
-      {
-        label: 'Twitter',
-        href: 'https://twitter.com/SViolenceToken',
-      },
-      {
-        label: 'Telegram English',
-        href: 'http://bit.ly/3rCpo0B',
-      },
-      {
-        label: 'Telegram Spanish',
-        href: 'https://t.me/YViolence',
-      },
-      // {
-      //   label: 'Blog',
-      //   href: 'https://pancakeswap.medium.com',
-      // },
-    ],
-  },
+  // {
+  //   label: 'Social Media',
+  //   icon: 'MoreIcon',
+  //   items: [
+  //     {
+  //       label: 'Twitter',
+  //       href: 'https://twitter.com/SViolenceToken',
+  //     },
+  //     {
+  //       label: 'Telegram English',
+  //       href: 'http://bit.ly/3rCpo0B',
+  //     },
+  //     {
+  //       label: 'Telegram Spanish',
+  //       href: 'https://t.me/YViolence',
+  //     },
+  //     // {
+  //     //   label: 'Blog',
+  //     //   href: 'https://pancakeswap.medium.com',
+  //     // },
+  //   ],
+  // },
 ]
 
 export default config

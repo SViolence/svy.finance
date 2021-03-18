@@ -162,7 +162,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
             (needsApproval && !isOldSyrup ? (
               <div style={{ flex: 1 }}>
                 <Button disabled={isFinished || requestedApproval} onClick={handleApprove} width="100%">
-                  {`Approve ${stakingTokenName}`}
+                  Approve
                 </Button>
               </div>
             ) : (
